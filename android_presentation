@@ -1,0 +1,381 @@
+
+
+
+
+
+					
+													I m dinesh , Product developer from komparify.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+											
+														Order from SUSAN MAM
+														====================
+
+							"Turn my Students into ANDROID NINJA'S" before 4PM today . :P
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+World's sweetest place to learn android application programming
+===============================================================
+
+
+
+															---->  developer.google.com  <----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+												The greatest tool for learning 
+				===============================================================															
+
+
+																SELF LEARINING
+
+																  	and 
+
+																DETERMINATION
+
+
+										It will take you , wherever you want to go 
+
+
+
+
+
+
+
+
+	Getting started with android 
+	============================
+
+	1) It is really simple once get hold of it .
+
+	2) There are good number of hooks , all you need to know is
+																					
+																					-> What it does  ?
+																					-> How to use it ?
+
+
+
+
+
+
+
+
+
+
+	Anatomy of android application
+	==============================
+
+	These are the building blocks of an android application 
+																				-> Activities
+																				-> Intents
+																				-> Content Providers
+																				-> Services
+																				-> Broadcast Receivers
+																				-> Widgets
+																				-> Notifications
+
+	Knowing what is what is critical !!!
+
+
+
+
+
+
+
+
+
+Refreshing Java and xml
+=======================
+
+Most android developers started developing for android without knowing JAVA 
+(no need to panic ).
+
+JAVA differs from C++ 
+										-> syntatically and conceptually in few places 
+
+
+				
+							-----------JAVA EXAMPLE------------
+
+							-----------JAVA INHERITANCE EXAMPLE------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+XML(Extensible markup language)
+===============================
+
+									-> Data exchange format (not widely used now)
+									-> User defined tags 
+
+							----------
+							!			   !
+							!SCRIPT A! ------->writes to ------- 
+							!			   !												 |
+							----------												 v	
+
+																							output.xml 	
+
+							----------												 	|
+							!			   !												 	|
+							!SCRIPT B! <-------read by ----------
+							!			   !
+							----------
+
+							-----------------XML example------------------
+
+
+
+
+
+
+
+
+Exploring  AndroidManifest.xml 
+=========  ===================
+
+# Manifest file defines  structure , its components , requirements and permissions of an
+	application
+
+#	Everything your app needs , uses or has , it has to be listed here.
+
+# Formal way of describing META DATA about your app 
+
+
+
+
+
+------------------------------------ EXAMPLE -------------------------------------------
+
+
+What is  R.java in android ?
+============================
+
+# Android resources strings,drawable,colors etc
+
+# what is a  drawable ? (briefly)
+
+# compiler generated (dont touch) .refreshes automatically 
+
+# contains references to the resources available
+
+
+What is an ACTIVITY ?
+================================
+
+# Everything we see in the application
+
+# Has UI controls , UI interaction etc 
+
+# Every application should have atleast one activity 
+
+
+Creating an ACTIVITY 
+									-> a class that inherits Activity
+
+									-> add the activity to the AndroidManifest 
+
+									-> Launch the activity
+
+ACTIVITY LIFE CYLE (later)
+
+What is an Intent ?
+===================
+
+# powerful message passing between different components of the app 
+
+# both simple and complex data-types can be passed
+
+
+
+Building User Interface
+=======================
+
+# has views and view groups 
+
+# all views are declared inside layouts (later)
+
+# create layouts -> reference it inside 
+activity/fragment/inside another layouts -> it shows up 
+
+
+
+
+Introduction to layouts
+=======================
+
+
+# Linear Layout , Frame Layout , Relative Layout , GridLayout (rows x col)
+
+#Linear Layout -> The name is the key .Aligns linearly  either vertically or horizontally
+
+#Relative Layout ->  State positions and alignment in relative terms
+
+#GridLayout -> Aligns views in terms of rows and columns
+
+#setting layout_height and layout_width 
+												-> MATCH_PARENT or FILL PARENT
+												-> WRAP CONTENT
+
+
+#android ids
+
+						when the id is to reference something from android system 
+						 use    android:id = "@id"
+
+						when the id is to reference something new 
+						 use    android:id = "@+id/"						
+
+
+Assinging UserInterfaces to Activity
+====================================
+			
+
+			@Override
+			public void onCreate(Bundle savedInstanceState) {
+			
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.main);
+
+			TextView myTextView = (TextView)findViewById(R.id.android_father_name);
+			setContentView(myTextView);
+			myTextView.setText(“Andy rubin is my Father”);
+}
+
+
+
+
+
+Introduction to Activity lifecycle
+==================================
+	1) onCreate
+	2) onStart (visible)
+	3) onResume (visible)
+	4) onPause  (partially visible)
+	5) onStop
+	6) onDestroy
+
+#each method is called , depending on the state of the application
+
+
+onCreate()  Initialize the activity and create views 
+---------
+
+onStart() 	Apply any required UI changes
+---------
+
+onResume()  Resume any paused UI updates /threads for activity . 
+----------
+
+onPause()		Suspend UI updates , the app is not visible , 
+----------
+
+onStop()		Suspend remaining UI updates , persist all edits or changes 
+--------
+
+
+
+#Application level Lifecycle methods are also available 
+										-> onLowMemory
+										-> onTrimMemory
+
+
+What are fragments in android ?
+===============================
+
+#encapsulates portions of the UI 
+
+#Reusable portions
+
+#Must be embedded into an activity
+
+#Lifecycle similar to activity , with few differences
+
+
+--------------------------------EXAMPLE------------------------------------
+
+
+GOOGLE CLOUD MESSAGING 
+======================
+
+
+
+-------------------------------CONCEPTS-------------------------------------
+
+
+WORKING WITH GOOGLE MAPS 
+========================
+
+
+
+-------------------------------CONCEPTS--------------------------------------
+
+
+
+
+
+
+
+
+
+
+
